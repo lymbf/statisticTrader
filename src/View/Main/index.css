@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.s-main{
+    width: 100%;
+    height: calc(100% - var(--header-height));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.s-main > div:nth-child(2){
+    flex-grow: 100;
+    margin-right: 40px;
+    margin-left: 50px;
+    background-color: green;
+}

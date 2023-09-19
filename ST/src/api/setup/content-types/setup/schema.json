@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "setups",
+  "info": {
+    "singularName": "setup",
+    "pluralName": "setups",
+    "displayName": "setup"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "walala": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "setup"
+    }
+  }
+}

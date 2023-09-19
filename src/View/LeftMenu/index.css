@@ -1,0 +1,11 @@
+.left-menu{
+    color: var(--font-color);
+    height: 100%;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0;
+}

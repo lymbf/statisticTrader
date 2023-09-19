@@ -1,38 +1,112 @@
-.App {
+:root {
+  --primary-color: #232830;
+  --secondary-color: #233044;
+  --third-color: #383F4E;
+  --font-color: #E8EAEB;
+  --bg-color: #13161D;
+  --heading-color: #292922;
+  --key-color: #2979F2;
+  --key-color-2: #2979f26c;
+  --key-color-3: #2979f21f;
+  --green-color: #29F28E;
+  --red-color: #FC0101;
+  --orange-color: #FC9E01;
+  --yellow-color: #FCEA01;
+
+  --header-height: 91px;
+}
+
+
+[color-mode="dark"] {
+  --primary-color: #232830;
+  --secondary-color: #233044;
+  --font-color: #E8EAEB;
+  --font-color-2:#b5b5b5;
+  --bg-color: #13161D;
+  --heading-color: #818cab;
+  --key-color: #2979F2;
+  --key-color-2: #2979f26c;
+  --key-color-3: #2979f21f;
+  --third-color: #383F4E;
+  --green-color: #29F28E;
+  --red-color: #FC0101;
+  --orange-color: #FC9E01;
+  --yellow-color: #FCEA01;
+}
+
+[color-mode="light"] {
+  --primary-color: white;
+  --secondary-color: #233044;
+  --font-color: #E8EAEB;
+  --bg-color: #13161D;
+  --heading-color: #818cab;
+  --key-color: #2979F2;
+  --third-color: #383F4E;
+  --green-color: #29F28E;
+  --red-color: #FC0101;
+  --orange-color: #FC9E01;
+  --yellow-color: #FCEA01;
+}
+
+
+body{
+  background-color: var(--bg-color);
+  color: (var(--font-color));
+}
+
+div{
+  box-sizing: border-box;
+}
+
+ul, li, a{
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5{
+  margin: 0;
+  padding:0;
+}
+
+h1{
+  font: normal normal 600 28px Poppins;
+  line-height: 28px;
+  letter-spacing: 2.8px;
+  color: #E8EAEB;
+  text-transform: uppercase;
+  opacity: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#initLoader{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  z-index: 99;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hide{
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 20
 }
 
-.App-link {
-  color: #61dafb;
+.hov:hover{
+  cursor:  pointer;
+  opacity: 0.7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cp:hover{
+  cursor: pointer;
 }

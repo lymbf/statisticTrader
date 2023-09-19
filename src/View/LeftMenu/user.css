@@ -1,0 +1,37 @@
+.l-m-user{
+    height:90px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: solid 2px var(--bg-color);
+    padding-left: 20px;
+}
+
+.l-m-user > div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.l-m-user > div:last-child{
+    border-left: 2px solid var(--bg-color);
+    width: 100px;
+    justify-content: center;
+}
+
+.l-m-user span{
+    font-size: 64px;
+}
+
+.avatar span{
+    font-size: 44px;
+    opacity: 0.7;
+}
+
+.user-name{
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+    margin-left: 20px;
+}
